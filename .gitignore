@@ -1,0 +1,32 @@
+# Файлы Visual Studio
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# Файлы сборки
+Debug/
+Release/
+x64/
+*.exe
+*.obj
+*.pdb
+*.ilk
+*.log
+*.idb
+*.ipdb
+*.iobj
+
+# Файлы отладки
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+*.db
+
+# Файлы ОС
+Thumbs.db
+.DS_Store
