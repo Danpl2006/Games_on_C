@@ -1,4 +1,4 @@
-// game_stats_v2
+// Game_stats
 
 #include <iostream>
 
