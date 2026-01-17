@@ -1,4 +1,4 @@
-// Game_stats
+// Game_stats Игровая стата
 
 #include <iostream>
 
