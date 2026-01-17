@@ -1,50 +1,51 @@
-// Game_stats Игровая стата
+// Game_stats
 
 #include <iostream>
 
 using namespace std;
 
 int main()
+
 {
-	unsigned int score = 5000;
-	cout << "score: " << score << endl;
+  unsigned int score = 5000;
+  cout << "score: " << score << endl;
 
-	// Изменение значения переменной
+  // РР·РјРµРЅРµРЅРёРµ Р·РЅР°С‡РµРЅРёСЏ РїРµСЂРµРјРµРЅРЅРѕР№
+  
+  score = score + 100;
+  cout << "score: " << score << endl;
 
-	score = score + 100;
-	cout << "score: " << score << endl;
+  // РљРѕРјР±РёРЅРёСЂРѕРІР°РЅРЅС‹Р№ РѕРїРµСЂР°С‚РѕСЂ РїСЂРёСЃРІР°РёРІР°РЅРёСЏ
 
-	// Комбинированный оператор присваивания
+  score += 100;
+  cout << "score: " << score << endl;
+  
+  // РСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РѕРїРµСЂР°С‚РѕСЂР° РёРЅРєСЂРµРјРµРЅС‚Р° ++ СѓРІРµР»РёС‡РёРІР°СЋС‰РёР№ Р·РЅР°С‡РµРЅРёРµ РїРµСЂРµРјРµРЅРЅРѕР№ РЅР° РµРґРёРЅРёС†Сѓ
+  // ++lives - СЃРЅР°С‡Р°Р»Р° РїРµСЂРµРјРµРЅРЅР°СЏ СѓРІРµР»РёС‡РёРІР°РµС‚СЃСЏ РЅР° 1 РїРѕС‚РѕРј РІСЃРµ РѕСЃС‚Р°Р»СЊРЅРѕРµ
+  // lives++ - РїСЂРёСЃРІР°РµС‚СЃСЏ СЃРЅР°С‡Р°Р»Р° РїРѕС‚РѕРј СѓРІРµР»РёС‡РёРІР°РµС‚СЃСЏ РЅР° 1
+  // -- РґРµРєСЂРµРјРµРЅС‚, С‚РѕР¶Рµ СЃР°РјРѕРµ С‚РѕР»СЊРєРѕ СѓРјРµРЅСЊС€Р°РµС‚ РЅР° 1
 
-	score += 100;
-	cout << "score: " << score << endl;
+  int lives = 3;
+  ++lives;
+  cout << "lives: " << lives << endl;
 
-	// Использование оператора инкремента ++ увеличивающий значение переменной на единицу
-	// ++lives - сначала переменная увеличивается на 1 потом все остальное
-	// lives++ - присвается сначала потом увеличивается на 1
-	// -- декремент, тоже самое только уменьшает на 1
+  lives = 3;
+  lives++;
+  cout << "lives: " << lives << endl;
 
-	int lives = 3;
-	++lives;
-	cout << "lives: " << lives << endl;
+  lives = 3;
+  int bonus = ++lives * 10;
+  cout << "lives, bonus: " << lives << ', ' << bonus << endl;
 
-	lives = 3;
-	lives++;
-	cout << "lives: " << lives << endl;
+  lives = 3;
+  bonus = lives++ * 10;
+  cout << "lives, bonus: " << lives << ', ' << bonus << endl;
 
-	lives = 3;
-	int bonus = ++lives * 10;
-	cout << "lives, bonus: " << lives << ', ' << bonus << endl;
-
-	lives = 3;
-	bonus = lives++ * 10;
-	cout << "lives, bonus: " << lives << ', ' << bonus << endl;
-
-	// Целочисленное переполнение
-	score = 4294967295;
-	cout << "\nscore: " << score << endl;
-	++score;
-	cout << "score: " << score << endl;
-	return 0;
-
+  // Р¦РµР»РѕС‡РёСЃР»РµРЅРЅРѕРµ РїРµСЂРµРїРѕР»РЅРµРЅРёРµ
+  score = 4294967295;
+  cout << "\nscore: " << score << endl;
+  ++score;
+  cout << "score: " << score << endl;
+  return 0;
+  
 }
