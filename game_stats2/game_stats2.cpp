@@ -41,10 +41,10 @@ int main()
 	cout << "lives, bonus: " << lives << ', ' << bonus << endl;
 
 	// Целочисленное переполнение
+
 	score = 4294967295;
 	cout << "\nscore: " << score << endl;
 	++score;
 	cout << "score: " << score << endl;
 	return 0;
-
 }

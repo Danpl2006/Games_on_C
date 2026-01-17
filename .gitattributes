@@ -1,3 +1,2 @@
-*.cpp text working-tree-encoding=UTF-8
-*.h text working-tree-encoding=UTF-8
-*.txt text working-tree-encoding=UTF-8
+*.cpp linguist-language=C++ text working-tree-encoding=UTF-8
+*.h linguist-language=C++ text working-tree-encoding=UTF-8
