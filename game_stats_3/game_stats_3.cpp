@@ -1,4 +1,5 @@
-// Игр статистика 
+//fkkfdsf
+// аггагавгагыгагыа
 #include <iostream>
 
 int main()
