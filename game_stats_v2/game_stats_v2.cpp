@@ -5,7 +5,6 @@
 using namespace std;
 
 int main()
-
 {
   unsigned int score = 5000;
   cout << "score: " << score << endl;
@@ -46,6 +45,5 @@ int main()
   cout << "\nscore: " << score << endl;
   ++score;
   cout << "score: " << score << endl;
-  return 0;
-  
+  return 0; 
 }
